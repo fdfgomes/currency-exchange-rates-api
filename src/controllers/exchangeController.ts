@@ -15,8 +15,6 @@ const getRates = async (req: Request, res: Response) => {
 
   const rates = await exchange.getRates(baseCurrency);
 
-  console.log(rates);
-
   return res.status(200).json(rates);
 };
 
